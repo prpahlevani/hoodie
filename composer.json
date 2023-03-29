@@ -1,0 +1,24 @@
+{
+    "name": "motrack/hoodie",
+    "description": "a wrapper for managing api response",
+    "autoload": {
+        "psr-4": {
+            "Motrack\\Hoodie\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Pooria Pahlevani",
+            "email": "pooria.cpp@gmail.com"
+        }
+    ],
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Motrack\\Hoodie\\Providers\\HoodieServiceProvider"
+            ]
+        }
+    }
+}
+
