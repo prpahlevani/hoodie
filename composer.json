@@ -19,7 +19,7 @@
                 "Motrack\\Hoodie\\Providers\\HoodieServiceProvider"
             ],
             "aliases": {
-                "Hoodie": "Motrack\\Hoodie\\Facades\\ApiResponderFacade"
+                "Hoodie": "Motrack\\Hoodie\\Facades\\Hoodie"
             }
         }
     }
