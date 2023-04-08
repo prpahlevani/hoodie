@@ -92,7 +92,7 @@ class ApiResponder implements ApiResponderInterface
             $statusCode = $data['status'];
         }
         if (isset($data['exception']) && ($data['exception'] instanceof Error || $data['exception'] instanceof Exception)) {
-            if (config('app.env') !== 'production') { // or app.debug == true
+            if (config('app.debug')) {
                 $responseStructure['exception'] = [
                     'message' => $data['exception']->getMessage(),
                     'file' => $data['exception']->getFile(),
