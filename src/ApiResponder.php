@@ -15,7 +15,6 @@ class ApiResponder implements ApiResponderInterface
 {
     public function respondWithResource(JsonResource $resource, $message = null, int $statusCode = 200, array $headers = []): JsonResponse
     {
-        // https://laracasts.com/discuss/channels/laravel/pagination-data-missing-from-api-resource
         return $this->apiResponse(
             [
                 'success' => true,
