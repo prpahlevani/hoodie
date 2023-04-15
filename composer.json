@@ -1,6 +1,8 @@
 {
     "name": "motrack/hoodie",
     "description": "a wrapper for managing api response",
+    "keywords": ["laravel", "json", "api", "response"],
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "Motrack\\Hoodie\\": "src/"
