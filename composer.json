@@ -8,13 +8,17 @@
             "Motrack\\Hoodie\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Motrack\\Hoodie\\Tests\\": "tests"
+        }
+    },
     "authors": [
         {
             "name": "Pooria Pahlevani",
             "email": "pooria.cpp@gmail.com"
         }
     ],
-    "require": {},
     "extra": {
         "laravel": {
             "providers": [
@@ -24,6 +28,15 @@
                 "Hoodie": "Motrack\\Hoodie\\Facades\\Hoodie"
             }
         }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.1",
+        "orchestra/testbench": "^8.5",
+        "nunomaduro/collision": "^7.4"
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "@php vendor/bin/testbench package:discover --ansi"
+        ]
     }
 }
-
